@@ -10,7 +10,7 @@ const http = httpRouter();
 // 3- we will save the user to the database
 
 http.route({
-  path: "/clerk-webhook",
+  path: "/clerkwebhook",
   method: "POST",
   handler: httpAction(async (ctx, request) => {
     const webhookSecret = process.env.CLERK_WEBHOOK_SECRET;
